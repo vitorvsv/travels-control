@@ -1,0 +1,8 @@
+/*
+     Quando a tela tiver 500px adiciona o scroll do datatables
+*/
+@media screen and (max-width: 500px) {
+    #table_id_wrapper {
+        overflow: scroll;
+    }
+}

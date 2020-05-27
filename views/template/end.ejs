@@ -1,0 +1,11 @@
+    <!-- Scripts -->
+    <%- include('script.ejs') %>
+
+    <% if (files && files.length > 0) { %>
+        <% files.forEach((file, index) => { %>
+            <script type="application/javascript" src="<%=file%>"></script>
+        <% }); %>
+    <% } %>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Navbar */
+
+nav {
+    width: 100%;
+}
+
+.navbar-color {
+    color: #fff;
+}
+
+/* End Navbar */
+
+#form-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    margin: 0;
+}
+
+/* Buttons styles */
+
+.btn-login {
+    width: 100%;
+}
+
+.btn-login:hover {
+    background-color: #454550;
+    opacity: 0.8;
+}
+
+.button-text-other-option {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+/* End buttons styles */
+
+/* Remove yellow background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white;
+}
+
+.alert-danger {
+    margin-bottom: 20px;
+}
+
+.nomes-usuarios .dropdown-content li > a, .dropdown-content li > span {
+    color: #292626;
+}
+
+.nomes-usuarios .select-wrapper .caret,
+.select-wrapper input.select-dropdown {
+    color: white;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: #767679 !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px solid #767679 !important;
+    box-shadow: 0 1px 0 0 #767679 !important
+}
+
+.btn-login:focus {
+    background-color: #767679;
+}
