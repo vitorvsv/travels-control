@@ -12,4 +12,7 @@ app.set('views', 'views');
 const basicRoutes = require('./routes/basic.routes');
 app.use(basicRoutes);
 
+const authRoutes = require('./routes/auth.routes')
+app.use(authRoutes);
+
 app.listen(3000);
