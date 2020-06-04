@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 
+const mongoConnect = require('./util/database.util');
+
 const app = express();
 
 // Configs
@@ -15,4 +17,6 @@ app.use(basicRoutes);
 const authRoutes = require('./routes/auth.routes')
 app.use(authRoutes);
 
-app.listen(3000);
+mongoConnect((client) => {
+    app.listen(3000);
+});

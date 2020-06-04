@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    /*background-color: #343338;*/
     background-color: #45434a;
 }
 
@@ -137,8 +136,7 @@ input.validate {
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 5px;
-    background-position-x: 9px;
+    background-size: cover;
 }
 
 .select2-group {
@@ -205,8 +203,6 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
 }
 
 table.dataTable tbody tr:hover {
-    /*background-color: rgba(57, 73, 171, 0.1) !important;*/
-    /*background-color: #545454!important;*/
     background-color: #565454!important;
 }
 
