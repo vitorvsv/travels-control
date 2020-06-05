@@ -29,6 +29,12 @@
             <% } %>
         </tbody>
     </table>
+
+    <%- include('../template/buttons/create.ejs', {
+        'href': '/users/create',
+        'class': 'button-expensive-mobile'
+    }) %>
+
 </main>
 
 <%- include('../template/end.ejs', { files: ['js/data-tables-initialization.js'] }) %>
