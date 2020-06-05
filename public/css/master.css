@@ -219,6 +219,10 @@ table.dataTable td, th {
     color: white;
 }
 
+.dataTables_info {
+    color: white!important;
+}
+
 /* Oculta a mostragem da quantidade de entradas na tabela */
 .dataTables_length {
     display: none;

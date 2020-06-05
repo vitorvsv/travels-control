@@ -1,0 +1,34 @@
+<%- include('../template/top.ejs', { files: [] }) %>
+<%- include('../template/navbar.ejs') %>
+
+<%- include('../template/menu.ejs') %>
+
+<main class="content">
+    <span class="page-title">Usuários</span>
+    <table id="table_id" class="display table-pattern">
+        <thead>
+        <tr>
+            <th>Opções</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+        </tr>
+        </thead>
+        <tbody>
+            <% if (users.length > 0) { %>
+                <% users.forEach((user, index) => {  %>
+                    <tr>
+                        <td>
+                            Botões de ação aqui
+                        </td>
+                        <td><%= user.name %></td>
+                        <td><%= user.email %></td>
+                        <td><%= user.fone %></td>
+                    </tr>
+                <% }); %>
+            <% } %>
+        </tbody>
+    </table>
+</main>
+
+<%- include('../template/end.ejs', { files: ['js/data-tables-initialization.js'] }) %>
