@@ -18,11 +18,12 @@ body {
     margin-right: 4rem;
 }
 
-.side-nav {
+.sidenav {
     font-size: 1rem;
+    overflow: hidden;
 }
 
-.side-nav li > a {
+.sidenav li > a {
     color: white;
 }
 
