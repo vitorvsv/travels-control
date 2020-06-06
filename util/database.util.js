@@ -4,7 +4,7 @@ const MongoClient = mongodb.MongoClient;
 let _db;
 
 const mongoConnect = callback => {
-    MongoClient.connect('mongodb://root:root@172.23.0.3:27017/admin')
+    MongoClient.connect('mongodb://root:root@172.23.0.2:27017/admin')
     .then(client => {
         _db = client.db();
         callback();
