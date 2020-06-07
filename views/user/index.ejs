@@ -19,7 +19,9 @@
                 <% users.forEach((user, index) => {  %>
                     <tr>
                         <td>
-                            Botões de ação aqui
+                            <%- include('../template/buttons/edit.ejs', {
+                                'href': '/users/'+ user._id +'/edit',
+                            }) %>
                         </td>
                         <td><%= user.name %></td>
                         <td><%= user.email %></td>

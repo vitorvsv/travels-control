@@ -4,9 +4,11 @@
 <%- include('../template/menu.ejs') %>
 
 <main class="content">
-    <span class="page-title">Criar usuário</span>
-    <form action="/users/create" method="POST">
-        <%- include('./form.ejs', { user: {} }) %>
+    <span class="page-title">Editar usuário</span>
+    <form action="/users/<%= user._id %>/edit" method="POST">
+        <%- include('./form.ejs', {
+            user: user
+        }) %>
     </form>
 </main>
 

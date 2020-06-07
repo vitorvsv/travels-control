@@ -29,3 +29,40 @@ exports.postCreate = (req, res, next) => {
             console.log(err);
         });
 };
+
+exports.getEdit = (req, res, next) => {
+    if (!req.params.id) {
+        return res.redirect('/');
+    }
+
+    User.findById(req.params.id)
+        .then(user => {
+            res.render('user/edit', {
+                user: user
+            });
+        })
+        .catch(err => {
+            console.log(err);
+        });
+};
+
+exports.postEdit = (req, res, next) => {
+    if (!req.params.id) {
+        return res.redirect('/');
+    }
+
+    const user = new User(
+        req.body.name,
+        req.body.email,
+        req.body.fone,
+        req.params.id,
+    );
+
+    user.save()
+        .then(result => {
+            res.redirect('/users');
+        })
+        .catch(err => {
+            console.log(err);
+        });
+};

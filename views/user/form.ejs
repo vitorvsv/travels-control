@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
         <div class="input-field col s12 m12 l12">
-            <input type="text" name="name" id="name" class="validate" placeholder="Joaozinho da Rosa">
+            <input type="text" name="name" id="name" class="validate" placeholder="Joaozinho da Rosa" value="<%= user.name ? user.name : '' %>">
             <label for="name">Nome</label>
         </div>
         <div class="input-field col s12 m12 l12">
-            <input type="text" name="fone" id="fone" class="validate telefone" placeholder="(51) 12345-6789">
-            <label for="fone">Telefone</label>
+            <input type="email" name="email" id="email" class="validate" placeholder="email@email.com" value="<%= user.email ? user.email : '' %>">
+            <label for="email">E-mail</label>
         </div>
         <div class="input-field col s12 m12 l12">
-            <input type="email" name="email" id="email" class="validate" placeholder="email@email.com">
-            <label for="email">E-mail</label>
+            <input type="text" name="fone" id="fone" class="validate telefone" placeholder="(51) 12345-6789" value="<%= user.fone ? user.fone : '' %>">
+            <label for="fone">Telefone</label>
         </div>
         <%- include('../template/buttons/previous.ejs', {
             href: '/users'
