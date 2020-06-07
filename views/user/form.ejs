@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="input-field col s12 m12 l12">
+            <input type="text" name="name" id="name" class="validate" placeholder="Joaozinho da Rosa">
+            <label for="name">Nome</label>
+        </div>
+        <div class="input-field col s12 m12 l12">
+            <input type="text" name="fone" id="fone" class="validate telefone" placeholder="(51) 12345-6789">
+            <label for="fone">Telefone</label>
+        </div>
+        <div class="input-field col s12 m12 l12">
+            <input type="email" name="email" id="email" class="validate" placeholder="email@email.com">
+            <label for="email">E-mail</label>
+        </div>
+        <%- include('../template/buttons/previous.ejs', {
+            href: '/users'
+        })%>
+        <%- include('../template/buttons/save.ejs')%>
+    </div>
+</div>
+
+<!-- <script type="application/javascript">
+    $(document).ready(function(){
+        $('.telefone').mask('(00) 00000-0000');
+        $('.cpf').mask('000.000.000-00');
+    });
+</script> -->

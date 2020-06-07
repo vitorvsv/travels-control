@@ -1,0 +1,13 @@
+<%- include('../template/top.ejs', { files: [] }) %>
+<%- include('../template/navbar.ejs') %>
+
+<%- include('../template/menu.ejs') %>
+
+<main class="content">
+    <span class="page-title">Criar usuário</span>
+    <form action="/users/create" method="POST">
+        <%- include('./form.ejs') %>
+    </form>
+</main>
+
+<%- include('../template/end.ejs', { files: [] }) %>
