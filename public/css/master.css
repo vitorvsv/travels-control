@@ -253,6 +253,23 @@ table.dataTable tbody tr {
 }
 
 /******************************
+ *        Modal               *
+*******************************/
+
+.modal {
+    background-color: #4e4c4c;
+}
+
+.modal-footer {
+    background-color: #4e4c4c !important;
+}
+
+.modal-footer button {
+    color: white;
+}
+
+
+/******************************
  *        Media queries       *
 *******************************/
 

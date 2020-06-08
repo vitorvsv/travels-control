@@ -10,11 +10,11 @@ exports.getIndex = (req, res, next) => {
         .catch(err => {
             console.log(err);
         });
-};
+}
 
 exports.getCreate = (req, res, next) => {
     res.render('user/create');
-};
+}
 
 exports.postCreate = (req, res, next) => {
     const user = new User(req.body.name, req.body.email, req.body.fone);
@@ -28,7 +28,7 @@ exports.postCreate = (req, res, next) => {
             console.log('User error');
             console.log(err);
         });
-};
+}
 
 exports.getEdit = (req, res, next) => {
     if (!req.params.id) {
@@ -44,7 +44,7 @@ exports.getEdit = (req, res, next) => {
         .catch(err => {
             console.log(err);
         });
-};
+}
 
 exports.postEdit = (req, res, next) => {
     if (!req.params.id) {
@@ -65,4 +65,18 @@ exports.postEdit = (req, res, next) => {
         .catch(err => {
             console.log(err);
         });
-};
+}
+
+exports.postDelete = (req, res, next) => {
+    if (!req.params.id) {
+        return res.redirect('/');
+    }
+
+    User.deleteById(req.params.id)
+        .then(result => {
+            res.redirect('/users');
+        })
+        .catch(err => {
+            console.log(err);
+        });
+}

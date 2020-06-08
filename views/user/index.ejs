@@ -22,6 +22,11 @@
                             <%- include('../template/buttons/edit.ejs', {
                                 'href': '/users/'+ user._id +'/edit',
                             }) %>
+
+                            <%- include('../template/buttons/delete.ejs', {
+                                'href': '/users/'+ user._id +'/delete',
+                                'id': user._id
+                            }) %>
                         </td>
                         <td><%= user.name %></td>
                         <td><%= user.email %></td>

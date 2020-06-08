@@ -9,5 +9,6 @@ router.get('/users/create', userController.getCreate);
 router.post('/users/create', userController.postCreate);
 router.get('/users/:id/edit', userController.getEdit);
 router.post('/users/:id/edit', userController.postEdit);
+router.post('/users/:id/delete', userController.postDelete);
 
 module.exports = router;
